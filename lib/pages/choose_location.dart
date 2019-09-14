@@ -6,8 +6,17 @@ class ChooseLocationPage extends StatefulWidget {
 }
 
 class _ChooseLocationPageState extends State<ChooseLocationPage> {
+
+  @override
+  void initState() {
+    super.initState();
+    print('INIT STATE');
+  }
+
+  
   @override
   Widget build(BuildContext context) {
+    print('BUILD STATE');
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
