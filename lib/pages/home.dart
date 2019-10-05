@@ -6,8 +6,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Map data = {};
+
   @override
   Widget build(BuildContext context) {
+    data = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -20,7 +24,8 @@ class _HomePageState extends State<HomePage> {
               label: Text('Edit Location'),
             )
           ],
-        ),),
+        ),
+      ),
     );
   }
 }
